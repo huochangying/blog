@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Dog from './layouts/index';
+import LayOut from './layouts/index';
 
 class App extends Component {
   render() {
     return (
-      <Dog></Dog>
+      <LayOut></LayOut>
     );
   }
 }

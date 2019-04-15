@@ -346,6 +346,10 @@ module.exports = function(webpackEnv) {
                       },
                     },
                   ],
+                  ["import", {
+                    "libraryName": "antd",
+                    "style": 'css'
+                  }]
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
@@ -421,6 +425,7 @@ module.exports = function(webpackEnv) {
               use: getStyleLoaders(
                 {
                   importLoaders: 2,
+                  modules: true,
                   sourceMap: isEnvProduction && shouldUseSourceMap,
                 },
                 'sass-loader'

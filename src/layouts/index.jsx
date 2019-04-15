@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
-// import ReactDOM from 'react-dom';
-import Style from './index.sass'
-const dog = {
-    name: '大黄',
-    age: 3,
-    gender: '熊'
-}
+import { Layout } from 'antd'
+import styles from './index.scss';
 
+const {
+    Header, Footer, Content,
+} = Layout;
 
-class Dog extends Component {
+class LayOut extends Component {
     render() {
-        return (<div className={Style.div}>123<div> {JSON.stringify({...dog})}</div></div>);
+        return (
+            <Layout>
+                <Header >Header</Header>
+                <Content className={styles.height}>
+                    Content
+                </Content>
+                <Footer>Footer</Footer>
+            </Layout>
+        );
     }
 }
 
-export default Dog
+export default LayOut
