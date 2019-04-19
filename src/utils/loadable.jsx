@@ -1,5 +1,5 @@
 import Loadable from 'react-loadable';
-import Loading from './loading';
+import Loading from '../components/loading';
 
 export default function MyLoadable(opts) {
   return Loadable(Object.assign({

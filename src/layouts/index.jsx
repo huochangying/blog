@@ -3,6 +3,7 @@ import { Layout } from 'antd'
 import styles from './index.scss';
 import TitleImg from '../assets/img/cat.jpg';
 import HeaderImg from '../assets/img/header.png';
+import IndexRouter from './indexRouter'
 
 const {
     Header, Footer, Content,
@@ -14,14 +15,14 @@ class LayOut extends Component {
             <Layout>
                 <Header className={styles.header}>
                     <div className={styles.singnature}>
-                    <img src={HeaderImg} alt=""/>
+                        <img src={HeaderImg} alt="" />
                     </div>
                     <div className={styles['profile-img']}>
                         <img src={TitleImg} alt="" />
                     </div>
                 </Header>
                 <Content>
-                    Content
+                    <IndexRouter></IndexRouter>
                 </Content>
                 <Footer>Footer</Footer>
             </Layout>
