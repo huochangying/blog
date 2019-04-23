@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import MyLoadable from '../utils/loadable'
 
 const Home = MyLoadable({ loader: () => import( /* webpackChunkName: "App" */ '../pages/home/home') })
-const List = MyLoadable({ loader: () => import( /* webpackChunkName: "App" */ '../pages/list/list') })
+const List = MyLoadable({ loader: () => import( /* webpackChunkName: "App" */ '../pages/fontEnd/list') })
 
 class RouterIndex extends Component {
     render() {
