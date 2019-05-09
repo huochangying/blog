@@ -1,0 +1,29 @@
+.menuBar {
+    margin-bottom: 80px;
+    text-align: center;
+    overflow: hidden;
+
+    ul {
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 15px;
+            font-size: 20px;
+
+            span {
+                border-bottom: 1px solid;
+                line-height: 17px;
+                display: inline-block;
+                color: #959595;
+                cursor: pointer;
+            }
+        }
+
+        .active {
+            span {
+                color: #000;
+            }
+        }
+    }
+}
